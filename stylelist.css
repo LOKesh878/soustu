@@ -1,0 +1,25 @@
+.a li{
+font-size: 32px;
+}
+.b li{
+    font-size:32px;
+}
+.a{
+    list-style-type:circle;
+    /* list-style-position: inside; */
+list-style-position: outside;
+}
+.b{
+    list-style-type:lower-greek;
+}
+ /* ul{
+    list-style-image: url('https://i0.wp.com/www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif?fit=450%2C250&ssl=1');
+} */
+.a li{
+    list-style-type: none;
+}
+.b li{
+    list-style: none;
+    background-color: black;
+    color:white;
+} 
