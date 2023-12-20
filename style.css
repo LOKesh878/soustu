@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100&display=swap');
+p{
+    background-color: yellow;
+}
+.items{
+    background-color: aqua;
+}
+.item1{
+    border:1px solid gray;
+    border:none;
+    background-color:yellow;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#item-1{
+     border:1px solid brown;
+     padding:25px;
+     border-radius:50%;
+     background-color: white;
+}
+button{
+    margin:50%;
+    padding: 20px;
+    border: none;
+    background-color:lightblue;
+    border-radius:50px;
+    font-weight: 800;
+    color: white;
+}
+/* container style */
+.container{
+    background-color: gray; 
+    height: 400px;
+    width: 500px;
+    margin:50px;
+    position: fixed;
+    
+
+}
+.red{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left:400px;
+    
+}
+.blue{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top:-100px;
+    
+}
+.green{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top:100px;
+}
+.yellow{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left:400px;
+}
+.image{
+    width:200px;
+    height: 200px;
+    position: relative;
+    bottom:250px;
+    left:170px;
+    
+}
+.image img{
+    width:150px;
+    border-radius:50%;
+    
+}
+#dm{
+    font-family: 'Poppins', sans-serif;
+}
