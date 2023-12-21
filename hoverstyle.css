@@ -1,0 +1,68 @@
+.container{
+    background-color:whitesmoke;
+    width:500px;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.con-1{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom:250px ;
+    border-radius: 50%;
+}
+.con-1 img{
+   
+    width: 100px;
+    height:100px;
+    border-radius: 50% ;
+    margin-bottom:20px;
+    
+
+}
+.con-1 img:hover{
+    transform: scale(1.2);
+    border: 1px solid red;
+
+}
+.con-1:hover{
+    background-color: aqua;
+
+}
+.btn{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+    margin-right: 150px;
+
+}
+button{
+    background-color: blue;
+    opacity: 10;
+    color:white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+
+}
+button:hover{
+    transform: scale(1.2);
+}
+p{
+    background-color: yellowgreen;
+    color: white;
+    font-weight: 700;
+    background-image: url('https://thumbs.dreamstime.com/b/autumn-fall-nature-scene-autumnal-park-beautiful-77869343.jpg');
+}
+p:hover{
+    background-color: red;
+}

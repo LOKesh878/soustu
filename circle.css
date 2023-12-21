@@ -1,0 +1,49 @@
+/* css code goes here */
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    margin:0;
+
+}
+.circle-container{
+    position: relative;
+}
+.circle{
+    width: 400px;
+    height: 400px;
+    border-radius:50%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+
+
+}
+.circle-1{
+    background-color:#FF2171;
+    z-index: 1;
+}
+.circle-2{
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    background-color:#FF90BB;
+    
+
+}
+.circle-3{
+    width: 200px;
+    height: 200px;
+    background-color:#FFE4A7;
+    z-index: 3;
+
+}
+.circle-4{
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+    background-color:#FFFAD7;
+
+}
