@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Titles</title>
+</head>
+<body>
+    <h1>Product Titles</h1>
+    <div id="title-container"></div>
+
+    <script>
+        // Function to fetch data from the API
+        async function fetchData() {
+            try {
+                const response = await fetch('https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products');
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                throw error;
+            }
+        }
+
+        // Function to display product titles
+        async function displayProductTitles() {
+            const titleContainer = document.getElementById('title-container');
+
+            try {
+                // Fetch data from the API
+                const data = await fetchData();
+
+                // Extract titles from the data
+                const titles = data.map(product => product.title);
+
+                // Create an unordered list and append list items
+                const ul = document.createElement('ul');
+                titles.forEach(title => {
+                    const li = document.createElement('li');
+                    li.textContent = title;
+                    ul.appendChild(li);
+                });
+
+                // Append the unordered list to the title container
+                titleContainer.appendChild(ul);
+            } catch (error) {
+                // Handle errors
+                console.error('Error displaying product titles:', error);
+            }
+        }
+
+        // Call the function to display product titles
+        displayProductTitles();
+    </script>
+</body>
+</html>
