@@ -1,0 +1,44 @@
+<!-- HTML code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Form Example</title>
+</head>
+<body>
+
+  <form id="myForm">
+    <label for="options">Select an option:</label>
+    <select id="options" name="options">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    // JavaScript code
+    const form = document.querySelector("#myForm");
+    const optionSelect = document.querySelector("#options");
+    const message = document.querySelector("#message");
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get the selected option element
+      const selectedOption = optionSelect.options[optionSelect.selectedIndex];
+
+      // Get the text content of the selected option
+      const selectedText = selectedOption.textContent;
+
+      // Update the message paragraph with the selected option text
+      message.textContent = `You selected ${selectedText}`;
+    });
+  </script>
+
+</body>
+</html>
