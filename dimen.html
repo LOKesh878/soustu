@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+			$('#btnDivHeight').click(function(){
+				alert($('#myDiv').height()); //returns 100
+			});
+
+			$('#btnPHeight').click(function(){
+				alert($('p').height()); //returns height in pixel
+			});
+
+			//set height
+			$('#myDiv').height(200);
+          $('p').height(300);
+          $('#btnDivWidth').click(function(){
+				alert($('#myDiv').width()); //returns width of #myDiv in pixels
+			});
+
+			$('#btnPWidth').click(function(){
+				alert($('p').width()); //returns width of first p in pixelx
+			});
+
+			//set width
+			$('#myDiv').width(300);
+          $('p').width(180);
+        });
+    </script>
+  <style>
+    div{
+		height:50px;
+		margin:10px 10px 10px 10px;
+		border:1px solid black;
+    }
+    p{
+		height:10%;
+		width:100%;
+		background-color:yellow;
+    }
+  </style>
+</head>
+<body>
+	<h1>Demo: jQuery height() method</h1>
+		
+	<button id="btnDivHeight">Get div height</button>
+	<button id="btnPHeight">Get p height</button>
+	
+	<div id="myDiv">
+		This is div.
+	</div>
+	<p>
+		This is paragraph.
+	</p>
+    <button id="btnDivWidth">Get div width</button>
+	<button id="btnPWidth">Get p width</button>
+	
+	<div id="myDiv">
+		This is div.
+	</div>
+	<p>
+		This is paragraph.
+	</p>
+</body>
+</html>

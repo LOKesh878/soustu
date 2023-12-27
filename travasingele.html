@@ -1,0 +1,181 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+
+		$('#btnShow').click(function(){
+				
+				$('p').each(function (index) {
+					alert('index: ' + index + ', text: ' + $(this).text());
+				});
+
+			});
+			
+        });
+    </script>
+</head>
+<body>
+	<h1>Demo: jQuery each() method</h1>
+	<button id="btnShow">Show p elements</button>
+	<div>
+		<p>This is First paragraph.</p>
+	</div>
+	<div id="myDiv">
+		<p>
+			This is second paragraph.
+		</p>
+		<div id="inrDiv">
+			<p>This is third paragraph.</p>
+		</div>
+		<div>
+			<ul>
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<p>This is fourth paragraph.</p>
+	</div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+
+		$('#btnShow').click(function(){
+				
+				$('#myDiv').children().each(function (index) {
+					alert('Index: ' + index + ', html: ' + $(this).html());
+				});
+
+			});
+			
+        });
+    </script>
+</head>
+<body>
+	<h1>Demo: jQuery children() method</h1>
+	<button id="btnShow">Show child elements</button>
+	<div>
+		<p>This is First paragraph.</p>
+	</div>
+	<div id="myDiv">
+		<p>
+			This is second paragraph.
+		</p>
+		<div id="inrDiv">
+			<p>This is third paragraph.</p>
+		</div>
+		<div>
+			<ul>
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<p>This is fourth paragraph.</p>
+	</div>
+</body>
+</html> -->
+//find()method
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+
+		$('#btnShow').click(function(){
+				
+				$('#myDiv').find('p').each(function(index){
+					alert('index' + index + ', text: ' + $(this).text());
+				});
+
+			});
+			
+        });
+    </script>
+</head>
+<body>
+	<h1>Demo: jQuery find() method</h1>
+	<button id="btnShow">Find p elements</button>
+	<div>
+		<p>This is First paragraph.</p>
+	</div>
+	<div id="myDiv">
+		<p>
+			This is second paragraph.
+		</p>
+		<div id="inrDiv">
+			<p>This is third paragraph.</p>
+		</div>
+		<div>
+			<ul>
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<p>This is fourth paragraph.</p>
+	</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+
+			$('#btnShow').click(function(){
+				
+					alert('Next element to #myDiv: ' + $('#myDiv').next().html());
+
+					alert('Next element to #inrDiv: ' + $('#inrDiv').next().html());
+				});
+			
+        });
+    </script>
+</head>
+<body>
+	<h1>Demo: jQuery next() method</h1>
+	<button id="btnShow">Next element</button>
+	
+	<div>
+		<p>This is First paragraph.</p>
+	</div>
+	<div id="myDiv">
+		<p>
+			This is second paragraph.
+		</p>
+		<div id="inrDiv">
+			<p>This is third paragraph.</p>
+		</div>
+		<div>
+			<ul>
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<p>This is fourth paragraph.</p>
+	</div>
+</body>
+</html>
